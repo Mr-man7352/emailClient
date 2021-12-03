@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "54445caf-c572-4bee-ae46-dbf0f4a0c2a5",
+		"name": "emailClient",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signedIn",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.angular-email.com/auth/signedin",
+					"protocol": "https",
+					"host": [
+						"api",
+						"angular-email",
+						"com"
+					],
+					"path": [
+						"auth",
+						"signedin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signUp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"manish\",\n    \"password\": \"manish\",\n    \"passwordConfirmation\": \"manish\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.angular-email.com/auth/signup",
+					"protocol": "https",
+					"host": [
+						"api",
+						"angular-email",
+						"com"
+					],
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signOut",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.angular-email.com/auth/signout",
+					"protocol": "https",
+					"host": [
+						"api",
+						"angular-email",
+						"com"
+					],
+					"path": [
+						"auth",
+						"signout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"manish\",\n    \"password\": \"manish\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.angular-email.com/auth/signin",
+					"protocol": "https",
+					"host": [
+						"api",
+						"angular-email",
+						"com"
+					],
+					"path": [
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
